@@ -1,2 +1,2 @@
 # happyNewYear
-Make new year's goal and check out.
+Make new year's goals and check out.
