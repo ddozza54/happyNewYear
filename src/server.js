@@ -11,6 +11,9 @@ const handleListening = () => {
 
 app.listen(PORT, handleListening);
 
+app.set("view engine", "pug");
+app.set("views", process.cwd() + "/src/views");
+
 app.use("/", globalRouter);
 
 export default app;
