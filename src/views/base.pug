@@ -8,11 +8,17 @@ html(lang="en")
         link(rel="stylesheet" href="https://unpkg.com/mvp.css")
 
     body 
-        h2=pageTitle
-        nav
-            ul
-                li
-                    a(href="/") Home
-                li
-                    a(href="/login") Login
-        block content
+        header
+            h2=pageTitle
+            nav
+                ul
+                    li
+                        a(href="/yearly") Yearly 
+                    li
+                        a(href="/monthly") Monthly    
+                    li
+                        a(href="/") HAPPY NEW YEAR
+                    li
+                        a(href="/login") Login/Logout
+        main
+            block years
