@@ -1,5 +1,6 @@
 import express from "express";
 import rootRouter from "./routers/rootRouter";
+import mongoose from "mongoose";
 
 const app = express();
 
