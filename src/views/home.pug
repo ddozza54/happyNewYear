@@ -16,8 +16,12 @@ block headerPage
         
 
 
-block years
+block contents
     div
+        div(class="progressBar")
+            div(class="progressBar_frame")
+                div(class="progressBar_frame_percent")
+                span %
         form(action="POST")
             h2 2023
             div 
@@ -25,3 +29,5 @@ block years
                     li list
             input(type="text")
             input(type="submit", value="🚀") 
+
+    

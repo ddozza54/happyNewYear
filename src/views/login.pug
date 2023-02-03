@@ -1,0 +1,13 @@
+extends base
+
+block contents 
+    h4 Sign in to HNY
+    form(method="POST")
+        input(placeholder="HNY ID", type="text")
+        input(placeholder="Password", type="password")
+        input(type="submit", value="Login")
+
+    hr
+    div 
+        span Don't have an account? 
+        a(href="/join") Create one Now &rarr;

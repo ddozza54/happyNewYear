@@ -1,5 +1,5 @@
 import express from "express";
-import globalRouter from "./routers/globalRouter";
+import rootRouter from "./routers/rootRouter";
 
 const app = express();
 
@@ -14,6 +14,6 @@ app.listen(PORT, handleListening);
 app.set("view engine", "pug");
 app.set("views", process.cwd() + "/src/views");
 
-app.use("/", globalRouter);
+app.use("/", rootRouter);
 
 export default app;

@@ -1,0 +1,17 @@
+extends base
+
+block contents 
+    h4 Create your HNY ID
+    form(method="POST")
+        input(placeholder="Name")
+        input(placeholder="Country/Region",type="text")
+        input(placeholder="ID", type="text")
+        input(placeholder="E-mail", type="email")
+        input(placeholder="Password", type="password")
+        input(placeholder="Password Confirm", type="password")
+        input(type="submit", value="Join")
+
+    hr
+    div 
+        span Already have an account? 
+        a(href="/join") Sign in now &rarr;
