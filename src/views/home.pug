@@ -17,17 +17,38 @@ block headerPage
 
 
 block contents
-    div
+    div(class="yearlyTodo")
         div(class="progressBar")
             div(class="progressBar_frame")
                 div(class="progressBar_frame_percent")
                 span %
-        form(action="POST")
-            h2 2023
-            div 
-                ul
-                    li list
-            input(type="text")
-            input(type="submit", value="🚀") 
+        include partials/yearlyForm.pug
+        include partials/yearlyForm.pug
+        include partials/yearlyForm.pug
 
-    
+    div(class="monthlyTodo")
+        h2 #{new Date().getFullYear()}
+        div(class="monthBox")
+            h4 Jan
+        div(class="monthBox")
+            h4 Fab
+        div(class="monthBox")
+            h4 Mar
+        div(class="monthBox")
+            h4 Apr
+        div(class="monthBox")
+            h4 May
+        div(class="monthBox")
+            h4 Jun
+        div(class="monthBox")
+            h4 July
+        div(class="monthBox")
+            h4 Aug
+        div(class="monthBox")
+            h4 Sep
+        div(class="monthBox")
+            h4 Oct
+        div(class="monthBox")
+            h4 Nov    
+        div(class="monthBox")
+            h4 Dec    
