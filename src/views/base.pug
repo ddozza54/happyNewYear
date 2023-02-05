@@ -16,11 +16,15 @@ html(lang="en")
             nav
                 ul
                     li
-                        a(href="/yearly") Yearly 
+                        a(id="yearlyNav", href="") Yearly 
                     li
-                        a(href="/monthly") Monthly    
+                        a(id="monthlyNav", href="") Monthly    
                     li
                         a(href="/login") Login/Logout
+                    li
+                        a(href="/join") Join
+                    li 
+                        a(href="/profile") My Page
         main
             block contents
     include partials/footer.pug
