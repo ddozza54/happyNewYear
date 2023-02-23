@@ -1,3 +1,5 @@
+import User from "../models/User";
+
 export const home = (req, res) => {
   return res.render("home", { pageTitle: "Home" });
 };
@@ -6,14 +8,16 @@ export const getJoin = (req, res) => {
   return res.render("join", { pageTitle: "Join" });
 };
 export const postJoin = (req, res) => {
-  const { username, email, password, password2, name, contry } = req.body;
+  console.log(req.body);
+  const { email, username, password, password2, name, contry } = req.body;
   //비번이 맞는지
-  if ((password = !password2)) {
+  if (password == !password2) {
     return res.status(400).render("join", {
       pageTitle: "Join",
       errorMessage: "Password Confirmation does not match",
     });
   }
+  return res.redirect("/join");
 };
 export const getLogin = (req, res) => {
   return res.render("login", { pageTitle: "Login" });
