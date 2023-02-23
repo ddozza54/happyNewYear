@@ -2,13 +2,15 @@ extends base
 
 block contents 
     h4 Create your HNY ID
+    if errorMessage 
+        span=errorMessage
     form(method="POST")
-        input(placeholder="Name")
-        input(placeholder="Country/Region",type="text")
-        input(placeholder="ID", type="text")
-        input(placeholder="E-mail", type="email")
-        input(placeholder="Password", type="password")
-        input(placeholder="Password Confirm", type="password")
+        input(name="username",placeholder="Username, ID", type="text", required)
+        input(name="email",placeholder="E-mail", type="email",required)
+        input(name="password",placeholder="Password", type="password",required)
+        input(name="password2",placeholder="Password Confirm", type="password",required)
+        input(name="name",placeholder="Name", type="text",required)
+        input(name="country",placeholder="Country/Region",type="text")
         input(type="submit", value="Join")
 
     hr
